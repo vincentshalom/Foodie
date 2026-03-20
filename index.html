@@ -17,7 +17,7 @@
             <img src="images/indexLogo.png" alt="logo" class="inline-block" />
           </a>
         </h1>
-        <ul class="hidden lg:flex items-center gap-4 font-semibold text-[#333]">
+        <ul class="hidden lg:flex items-center gap-4 font-semibold text-[#333] mt-0 mb-0">
           <li><a href="products.html" class="">Products</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
@@ -26,7 +26,7 @@
         <div class="flex items-center gap-6">
           <form
             action=""
-            class="hidden h-[40px] lg:flex items-center justify-center border border-[#1a1a1a] rounded-full overflow-hidden"
+            class="hidden h-[40px] lg:flex items-center justify-center border border-[#1a1a1a] rounded-full overflow-hidden shrink-0"
           >
 
           <!-- hidden w-[40px]-->
@@ -41,13 +41,15 @@
             </button>
           </form>
 
+
+
           <button
-            class="lg:hidden flex items-center justify-center cursor-pointer"
+            class="lg:hidden flex items-center justify-center cursor-pointer shrink-0"
           >
             <ion-icon name="search-outline" class="text-2xl"></ion-icon>
           </button>
           <button
-            class="relative flex items-center justify-center cursor-pointer"
+            class="h-full relative flex items-center justify-center cursor-pointer shrink-0"
           >
             <ion-icon name="cart-outline" class="text-2xl"></ion-icon>
             <span
@@ -57,13 +59,14 @@
           </button>
 
           <!-- prettier-ignore -->
-          <a href="" class="hidden lg:block bg-[#1a1a1a] text-[#f4f4f4] rounded-full text-xs py-2 px-4">Sign Up</a>
+          <a href="" class="hidden lg:block bg-[#1a1a1a] text-[#f4f4f4] rounded-full text-xs py-2 px-4 shrink-0">Sign Up</a>
 
           <button
-            class="flex items-center justify-center cursor-pointer lg:hidden"
+            class="flex items-center justify-center cursor-pointer lg:hidden shrink-0"
           >
             <ion-icon name="menu-outline" class="text-3xl"></ion-icon>
           </button>
+        
         </div>
       </nav>
     </header>
@@ -1382,9 +1385,11 @@
                 Categories
               </h2>
               <ul class="flex flex-col gap-3 text-sm">
-                <li><a href="#snacks">Snacks</a></li>
-                <li><a href="#foods">Foods</a></li>
-                <li><a href="#wines">Wine</a></li>
+                <li><a href="#">Proteins</a></li>
+                <li><a href="#foods">Carbs</a></li>
+                <li><a href="#wines">Vitamins</a></li>
+                <li><a href="#wines">Food</a></li>
+                <li><a href="#wines">Drink</a></li>
               </ul>
             </nav>
 
