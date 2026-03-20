@@ -24,17 +24,19 @@
         </ul>
 
         <section class="flex items-center gap-6">
-          <form
+         <form
             action=""
-            class="hidden h-[40px] w-[40px] lg:flex items-center justify-center border border-white rounded-full overflow-hidden"
+            class="hidden h-[40px] lg:flex items-center justify-center border border-[#f4f4f4] text-[#f4f4f4] rounded-full overflow-hidden"
           >
+
+          <!-- hidden w-[40px]-->
             <input
               type="search"
               placeholder="Search products..."
-              class="w-full h-full outline-none bg-transparent lg:text-lg text-md px-2 py-1 placeholder:text-sm placeholder:text-[#f4f4f4] flex-1 grow hidden"
+              class="w-full h-full outline-none bg-transparent lg:text-lg text-md px-2 py-1 placeholder:text-sm placeholder:text-[#ccc] flex-1 grow"
             />
 
-            <button type="submit" class="flex items-center justify-center">
+            <button type="submit" class="flex items-center justify-center shrink-0 h-[40px] w-[40px] rounded-full text-[#333] bg-[#f4f4f4]">
               <ion-icon name="search-outline" class="text-xl"></ion-icon>
             </button>
           </form>
@@ -67,11 +69,15 @@
     </header>
     <main class="">
       <!-- HERO  -->
-      <section class="min-h-fit pt-40 pb-35 bg-[#071a1d]/99">
+      <section class="relative min-h-fit pt-40 pb-35 bg-[url('images/herobgImage-2.webp')] bg-cover bg-center bg-no-repeat">
         <div
           class="max-w-full lg:max-w-[90%] m-auto px-2 flex flex-col lg:flex-row justify-between items-center gap-4 text-[#f4f4f4]"
         >
-          <div class="">
+
+
+        <div class="absolute inset-0 bg-[#071a1d]/90"></div>
+
+          <div class="relative z-20">
             <h3 class="uppercase text-[#80b500] text-xs font-bold mb-2">
                Welcome to our company
             </h3>

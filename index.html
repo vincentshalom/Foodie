@@ -26,15 +26,17 @@
         <div class="flex items-center gap-6">
           <form
             action=""
-            class="hidden h-[40px] w-[40px] lg:flex items-center justify-center border border-[#1a1a1a] rounded-full overflow-hidden"
+            class="hidden h-[40px] lg:flex items-center justify-center border border-[#1a1a1a] rounded-full overflow-hidden"
           >
+
+          <!-- hidden w-[40px]-->
             <input
               type="search"
               placeholder="Search products..."
-              class="w-full h-full outline-none bg-transparent lg:text-lg text-md px-2 py-1 placeholder:text-sm placeholder:text-gray-300 flex-1 bg-yellow-500 grow hidden"
+              class="w-full h-full outline-none bg-transparent lg:text-lg text-md px-2 py-1 placeholder:text-sm placeholder:text-[#555] flex-1 grow"
             />
 
-            <button type="submit" class="flex items-center justify-center">
+            <button type="submit" class="flex items-center justify-center shrink-0 h-[40px] w-[40px] rounded-full bg-[#333] text-[#f4f4f4]">
               <ion-icon name="search-outline" class="text-xl"></ion-icon>
             </button>
           </form>
