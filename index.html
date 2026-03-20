@@ -1,0 +1,1445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>Foodie | Welcome</title>
+  </head>
+  <body>
+    <header class="fixed top-0 z-50 w-full shadow-md bg-[#f7f5eb]">
+      <nav
+        class="container m-auto flex items-center justify-between gap-2 py-4 px-2"
+      >
+        <h1 class="">
+          <a href="index.html" class="flex items-center gap-[1px]">
+            <img src="images/indexLogo.png" alt="logo" class="inline-block" />
+          </a>
+        </h1>
+        <ul class="hidden lg:flex items-center gap-4 font-semibold text-[#333]">
+          <li><a href="products.html" class="">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <section class="flex items-center gap-6">
+          <form
+            action=""
+            class="hidden h-[40px] w-[40px] lg:flex items-center justify-center border border-[#1a1a1a] rounded-full overflow-hidden"
+          >
+            <input
+              type="search"
+              placeholder="Search products..."
+              class="w-full h-full outline-none bg-transparent lg:text-lg text-md px-2 py-1 placeholder:text-sm placeholder:text-gray-300 flex-1 bg-yellow-500 grow hidden"
+            />
+
+            <button type="submit" class="flex items-center justify-center">
+              <ion-icon name="search-outline" class="text-xl"></ion-icon>
+            </button>
+          </form>
+
+          <button
+            class="lg:hidden flex items-center justify-center cursor-pointer"
+          >
+            <ion-icon name="search-outline" class="text-2xl"></ion-icon>
+          </button>
+          <button
+            class="relative flex items-center justify-center cursor-pointer"
+          >
+            <ion-icon name="cart-outline" class="text-2xl"></ion-icon>
+            <span
+              class="absolute bg-[#1a1a1a] text-[#f4f4f4] text-sm py-[1px] px-2 rounded-full -top-3 left-2 flex items-center justify-center"
+              >0</span
+            >
+          </button>
+
+          <!-- prettier-ignore -->
+          <a href="" class="hidden lg:block bg-[#1a1a1a] text-[#f4f4f4] rounded-full text-xs py-2 px-4">Sign Up</a>
+
+          <button
+            class="flex items-center justify-center cursor-pointer lg:hidden"
+          >
+            <ion-icon name="menu-outline" class="text-3xl"></ion-icon>
+          </button>
+        </section>
+      </nav>
+    </header>
+
+    <main class="">
+        <!-- HERO SECTION -->
+      <section class="min-h-fit pt-30 pb-35 bg-[#f7f5eb]">
+        <div class="container m-auto px-2 flex lg:flex-row flex-col">
+          <aside class="flex flex-col lg:w-[50%] w-[100%]">
+            <p class="flex items-center">
+              <img
+                src="images/heroIcon.png"
+                alt="icon of a green pepper"
+                class=""
+              />
+              <small class="">100% Genuine Products</small>
+            </p>
+            <h1
+              class="text-2xl md:text-3xl lg:text-6xl font-bold text-[#333] mt-3 mb-7 flex flex-col"
+            >
+              <span>Tasty & Healthy</span>
+              <span>Organic Food</span>
+            </h1>
+
+            <a
+              href="#"
+              class="bg-[#80b500] text-[#f4f4f4] py-3 px-6 text-center w-fit inline-block"
+            >
+              Explore Products</a
+            >
+            <p class="mt-3 text-sm flex flex-col">
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Necessitatibus, nulla.</span
+              >
+              <span
+                >Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                .</span
+              >
+              <span>Lorem ipsum dolor adipisicing elit, nulla.</span>
+            </p>
+          </aside>
+          <aside class="lg:w-[50%] w-[100%]">
+            <img src="images/herobg.png" alt="image of vegetables" />
+          </aside>
+        </div>
+      </section>
+
+      <section class="min-h-fit py-15">
+        <div
+          class="container m-auto px-2 flex lg:flex-row flex-col gap-6 w-full"
+        >
+          <aside class="lg:w-[50%] w-full rounded-md overflow-hidden shadow-md">
+            <img src="images/card1-bg.png" alt="" class="block h-full w-full" />
+          </aside>
+          <aside class="flex flex-col gap-6 lg:w-[50%] w-full">
+            <article class="h-full rounded-md overflow-hidden shadow-md">
+              <img
+                src="images/card2-bg.png"
+                alt=""
+                class="block h-full w-full"
+              />
+            </article>
+            <article class="h-full rounded-md overflow-hidden shadow-md">
+              <img
+                src="images/card3-bg.png"
+                alt=""
+                class="block h-full w-full"
+              />
+            </article>
+          </aside>
+        </div>
+      </section>
+
+        <!-- OUR PRODUCTS -->
+      <section class="min-h-fit pb-15">
+        <div class="container m-auto px-2">
+          <h2
+            class="text-2xl md:text-3xl lg:text-5xl text-center text-[#333] mb-8 font-bold"
+          >
+            Our Products
+          </h1>
+
+          <div
+            role="tablist"
+            class="flex lg:justify-center items-center gap-2 w-full flex-wrap pb-4"
+          >
+            <button
+              role="tab"
+              aria-selected="true"
+              class="px-4 py-2 rounded-full border border-gray-400 aria-selected:bg-[#80b500] aria-selected:text-[#f4f4f4] aria-selected:border-[#80b500] cursor-pointer"
+            >
+              Food & Drinks
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              class="px-4 py-2 rounded-full border border-gray-400 aria-selected:bg-white aria-selected:text-black aria-selected:border-white cursor-pointer"
+            >
+              Vegetables
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              class="px-4 py-2 rounded-full border border-gray-400 aria-selected:bg-white aria-selected:text-black aria-selected:border-white cursor-pointer"
+            >
+              Protein
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              class="px-4 py-2 rounded-full border border-gray-400 aria-selected:bg-white aria-selected:text-black aria-selected:border-white cursor-pointer"
+            >
+              Bread & Cake
+            </button>
+            <button
+              role="tab"
+              aria-selected="false"
+              class="px-4 py-2 rounded-full border border-gray-400 aria-selected:bg-white aria-selected:text-black aria-selected:border-white cursor-pointer"
+            >
+              Meat & Fish
+            </button>
+          </div>
+
+        
+        <ul class="grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-4 my-8">
+  
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/orange" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/orange.png" 
+            alt="Fresh yellow orange"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Orange
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Sweet, fresh oranges directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/apple" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/broccoli.png" 
+            alt="Fresh brocolli"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Brocolli
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Fresh Oragnic,brocolli directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/apple" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/raddish.png" 
+            alt="Fresh raddish"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Raddish
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Fresh raddish directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/onions" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/onion.png" 
+            alt="Fresh Onions"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Onion
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Oranic Onions directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/kiwi" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/kiwi.png" 
+            alt="Fresh kiwi"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Kiwi
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Sweet, fresh Kiwi directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/mushroom" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/mushroom.png" 
+            alt="Fresh mushroom"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Mushrooms
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Sweet, fresh mushrooms directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/brownkiwi" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/brownkiwi.png" 
+            alt="Fresh brown kiwi"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Brown Kiwi
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Sweet, fresh Brown Kiwi directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/brownpeach" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/brownpeach.png" 
+            alt="Fresh peach"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Brown Peach
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2">
+          Sweet, fresh Brown Peach directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+</ul>
+        
+        
+        
+        </div>
+      </section>
+
+      <!-- HOT DEALS -->
+      <section class="min-h-fit pb-15 bg-[#f7f5eb]">
+        <div class="container m-auto px-2 flex lg:flex-row flex-col  w-full py-20">
+            <aside class="lg:w-[50%] w-full">
+                <img src="images/honey.png" alt="a bottle of honey" class="block ">
+            </aside>
+            <aside class="flex flex-col gap-2">
+                <h3 class="text-[#80b500] text-sm font-semibold">Today's Hot Deals</h3>
+                <h2 class="font-extrabold leading-tight text-[#333] mb-10">
+                    <span class="block text-3xl sm:text-3xl md:text-4xl lg:text-5xl">
+                        Original Stock Honey
+                    </span>
+                    <span class="block text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+                        Combo Package
+                    </span>
+                </h2>
+
+                <div class="flex gap-2 flex-wrap mb-8">
+                    <div class="flex flex-col items-center">
+                        <p class="text-lg text-solid h-[50px] w-[50px] bg-white flex items-center justify-center rounded-full font-bold">00</p>
+                        <span class="uppercase text-gray-400">days</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-lg text-solid h-[50px] w-[50px] bg-white flex items-center justify-center rounded-full font-bold">00</p>
+                        <span class="uppercase text-gray-400">hrs</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-lg text-solid h-[50px] w-[50px] bg-white flex items-center justify-center rounded-full font-bold">00</p>
+                        <span class="uppercase text-gray-400">mins</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <p class="text-lg text-solid h-[50px] w-[50px] bg-white flex items-center justify-center rounded-full font-bold">00</p>
+                        <span class="uppercase text-gray-400">secs</span>
+                    </div>
+                </div>
+
+                <a href="#" class="bg-[#80b500] text-[#f4f4f4] font-bold uppercase py-3 px-6 text-center w-fit inline-block">shop now</a>
+            </aside>
+        </div>
+      </section>
+
+      <!-- FEATURED PRODUCTS -->
+      <section class="min-h-fit pb-15">
+        <div class="container m-auto px-2 pt-20">
+             <h2
+            class="text-2xl md:text-3xl lg:text-5xl text-center text-[#333] mb-8 font-bold text-[#333]"
+          >
+            Featured Products
+          </h1>
+        <ul class="grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-4 my-8">
+  
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/peach" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/peach.png" 
+            alt="Fresh peach"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Peach
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Sweet, fresh Peach directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/pawpaw" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/pawpaw.png" 
+            alt="Fresh pawpaw"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Pawpaw
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Fresh Organic Pawpaw directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/strawberry" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/strawberry.png" 
+            alt="Fresh strawberry"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Strawberry
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Fresh Strawberry directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/pear" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/pear.png" 
+            alt="Fresh pear"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Pear
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Organic Pear directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/mango" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/mango.png" 
+            alt="Fresh mango"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Mango
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Sweet, fresh mango directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/apple" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/apple.png" 
+            alt="Fresh apples"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Apples
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Sweet, fresh Apples directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/kiwi" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/kiwi.png" 
+            alt="Fresh kiwi"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Kiwi
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Sweet, fresh Kiwi directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+  <li>
+    <article class="h-full flex flex-col bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
+      <a href="/product/mushroom" class="block">
+        <div class="aspect-square overflow-hidden relative">
+          <img 
+            src="images/mushroom.png" 
+            alt="Fresh peach"
+            class="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+          >
+          <span class="absolute top-6 right-6 w-fit font-semibold text-white uppercase bg-[#80b500] py-1 px-2 rounded-tl-[15px] rounded-br-[15px] text-sm">new</span>
+        </div>
+
+        <header class="p-2">
+          <h3 class="font-semibold text-lg line-clamp-2">
+            Fresh Organic Mushroom
+          </h3>
+        </header>
+      </a>
+
+      <!-- PRODUCT INFO -->
+      <div class="px-3 pb-3 flex flex-col gap-2 grow">
+        <p class="text-sm text-gray-600 line-clamp-2 grow">
+          Sweet, fresh Mushroom directly from the farm.
+        </p>
+        <div class="text-sm text-yellow-500">
+          ★★★★☆ <span class="text-gray-500">(120)</span>
+        </div>
+        <div class="flex items-center justify-between mt-auto">
+          <p class="text-[#80b500] font-semibold text-lg">
+            <ins class="no-underline">$150.00</ins>
+            <del class="ml-2 text-sm text-gray-400">$189.00</del>
+          </p>
+        </div>
+        <!-- CTA -->
+        <button class="mt-2 bg-[#80b500] text-white py-2 rounded-lg hover:bg-green-600 transition cursor-pointer">
+          Add to Cart
+        </button>
+
+      </div>
+    </article>
+  </li>
+        </ul>
+        </div>
+      </section>
+
+      <!-- TESTIMONIALS -->
+      <section class="min-h-fit py-15 bg-[#f7f5eb]">
+        <div class="container m-auto px-2">
+            <h3 class="uppercase text-bold text-center text-[#80b500] font-bold mb-4">// testimonials</h3>
+             <h2
+            class="text-2xl md:text-3xl lg:text-5xl text-center text-[#333] mb-10 font-bold text-[#333]"
+          >
+            Clients' Feedbacks 
+          </h2>
+
+          <!-- <ul class="relative">
+            <button class="">
+                <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+
+            <li>
+                <article class="">
+                    <div class="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ab adipisci voluptate vitae animi quibusdam, placeat libero eius ex nam!</p>
+                        <h3 class=""></h3>
+                        <h4 class="text-[#80b500] font-semibold">Founder</h4>
+                    </div>
+                </article>
+            </li>
+            <button>
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </ul> -->
+        
+        <div class="relative max-w-container mx-auto">
+
+  <!-- LEFT BUTTON -->
+  <button class="hidden lg:block absolute left-0 top-1/2 -translate-y-1/2 bg-white shadow w-[50px] h-[50px] rounded-full hover:bg-[#80b500] flex items-center justify-center hover:text-[#f4f4f4]">
+    <ion-icon name="arrow-back-outline"></ion-icon>
+  </button>
+
+  <!-- TESTIMONIAL LIST -->
+  <ul class="flex gap-4 overflow-x-auto scroll-smooth snap-x snap-mandatory px-2 scrollbar-hide ">
+
+  <li class=" shrink-0 w-[400px] snap-start">
+    <article class="flex gap-4 items-start bg-white p-4 rounded-lg">
+      
+      <div class="w-16 h-16 rounded-full overflow-hidden shrink-0">
+        <img src="images/customer-1.jpg" alt="Photo of client" class="w-full h-full object-cover">
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <p class="text-gray-600 text-sm">
+          This product completely changed my daily routine. The quality is top-notch and I highly recommend it!
+        </p>
+
+        <h3 class="font-semibold text-sm">John Doe</h3>
+
+        <p class="text-[#80b500] font-semibold text-sm">Buyer</p>
+      </div>
+
+    </article>
+  </li>
+  <li class=" shrink-0 w-[400px] snap-start">
+    <article class="flex gap-4 items-start bg-white p-4 rounded-lg">
+      
+      <div class="w-16 h-16 rounded-full overflow-hidden shrink-0">
+        <img src="images/customer-1.jpg" alt="Photo of client" class="w-full h-full object-cover">
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <p class="text-gray-600 text-sm">
+          This product completely changed my daily routine. The quality is top-notch and I highly recommend it!
+        </p>
+
+        <h3 class="font-semibold text-sm">John Doe</h3>
+
+        <p class="text-[#80b500] font-semibold text-sm">Buyer</p>
+      </div>
+
+    </article>
+  </li>
+  <li class=" shrink-0 w-[400px] snap-start">
+    <article class="flex gap-4 items-start bg-white p-4 rounded-lg">
+      
+      <div class="w-16 h-16 rounded-full overflow-hidden shrink-0">
+        <img src="images/customer-1.jpg" alt="Photo of client" class="w-full h-full object-cover">
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <p class="text-gray-600 text-sm">
+          This product completely changed my daily routine. The quality is top-notch and I highly recommend it!
+        </p>
+
+        <h3 class="font-semibold text-sm">John Doe</h3>
+
+        <p class="text-[#80b500] font-semibold text-sm">Buyer</p>
+      </div>
+
+    </article>
+  </li>
+  <li class=" shrink-0 w-[400px] snap-start">
+    <article class="flex gap-4 items-start bg-white p-4 rounded-lg">
+      
+      <div class="w-16 h-16 rounded-full overflow-hidden shrink-0">
+        <img src="images/customer-1.jpg" alt="Photo of client" class="w-full h-full object-cover">
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <p class="text-gray-600 text-sm">
+          This product completely changed my daily routine. The quality is top-notch and I highly recommend it!
+        </p>
+
+        <h3 class="font-semibold text-sm">John Doe</h3>
+
+        <p class="text-[#80b500] font-semibold text-sm">Buyer</p>
+      </div>
+
+    </article>
+  </li>
+  <li class=" shrink-0 w-[400px] snap-start">
+    <article class="flex gap-4 items-start bg-white p-4 rounded-lg">
+      
+      <div class="w-16 h-16 rounded-full overflow-hidden shrink-0">
+        <img src="images/customer-1.jpg" alt="Photo of client" class="w-full h-full object-cover">
+      </div>
+
+      <div class="flex flex-col gap-1">
+        <p class="text-gray-600 text-sm">
+          This product completely changed my daily routine. The quality is top-notch and I highly recommend it!
+        </p>
+
+        <h3 class="font-semibold text-sm">John Doe</h3>
+
+        <p class="text-[#80b500] font-semibold text-sm">Buyer</p>
+      </div>
+
+    </article>
+  </li>
+
+  </ul>
+
+  <!-- RIGHT BUTTON -->
+  <button class="hidden lg:block absolute right-0 top-1/2 -translate-y-1/2 bg-white shadow w-[50px] h-[50px] rounded-full flex items-center justify-center hover:bg-[#80b500] hover:text-[#f4f4f4]">
+    <ion-icon name="arrow-forward-outline"></ion-icon>
+  </button>
+
+</div>
+        
+        
+        </div>
+      </section>
+
+        <!-- BLOG POSTS -->
+      <section class="min-h-fit pt-15 pb-40">
+        <div class="container m-auto px-2">
+             <h2
+            class="text-2xl md:text-3xl lg:text-5xl text-center text-[#333] mb-10 font-bold"
+          >
+           Latest Blog 
+          </h2>
+          
+        <ul class="grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-10">
+
+  <li class="w-full">
+    <article class="bg-white shadow-md overflow-hidden">
+
+      
+      <div class="overflow-hidden">
+        <img 
+          src="images/post1.jpg" 
+          alt="Blog post image"
+          class="w-full h-60 object-cover transition duration-300 hover:scale-110"
+        >
+      </div>
+      <div class="p-4 flex flex-col gap-3">
+
+        <p class="flex items-center gap-4 text-sm text-gray-600">
+          <span class="flex items-center gap-1">
+            <ion-icon name="person-circle-outline" class="text-[#80b500]"></ion-icon>
+            Admin
+          </span>
+
+          <span class="flex items-center gap-1">
+            <ion-icon name="pricetag-outline" class="text-[#80b500]"></ion-icon>
+            Services
+          </span>
+        </p>
+
+        <h2 class="text-lg md:text-xl lg:text-2xl font-semibold">
+          Elegance, Service & Repairs
+        </h2>
+
+       
+        <div class="flex items-center justify-between text-sm mt-6">
+          <span class="flex items-center gap-1 text-gray-500">
+            <ion-icon name="calendar-outline" class="text-[#80b500]"></ion-icon>
+            March 20, 2026
+          </span>
+
+          <a href="#" class="uppercase text-[#80b500] font-semibold hover:underline block">
+            Read more
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+  </li>
+  <li class="w-full">
+    <article class="bg-white shadow-md overflow-hidden">
+
+      <!-- IMAGE -->
+      <div class="overflow-hidden">
+        <img 
+          src="images/post2.jpg" 
+          alt="Blog post image"
+          class="w-full h-60 object-cover transition duration-300 hover:scale-110"
+        >
+      </div>
+
+      <!-- CONTENT -->
+      <div class="p-4 flex flex-col gap-3">
+
+        <p class="flex items-center gap-4 text-sm text-gray-600">
+          <span class="flex items-center gap-1">
+            <ion-icon name="person-circle-outline" class="text-[#80b500]"></ion-icon>
+            Buyer
+          </span>
+
+          <span class="flex items-center gap-1">
+            <ion-icon name="pricetag-outline" class="text-[#80b500]"></ion-icon>
+            Services
+          </span>
+        </p>
+
+        <h2 class="text-lg md:text-xl lg:text-2xl font-semibold">
+          Elegance, Service & Repairs
+        </h2>
+
+        <div class="flex items-center justify-between text-sm mt-6">
+          <span class="flex items-center gap-1 text-gray-500">
+            <ion-icon name="calendar-outline" class="text-[#80b500]"></ion-icon>
+            March 20, 2026
+          </span>
+
+          <a href="#" class="uppercase text-[#80b500] font-semibold hover:underline">
+            Read more
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+  </li>
+  <li class="w-full">
+    <article class="bg-white shadow-md overflow-hidden">
+
+      <!-- IMAGE -->
+      <div class="overflow-hidden">
+        <img 
+          src="images/post3.jpg" 
+          alt="Blog post image"
+          class="w-full h-60 object-cover transition duration-300 hover:scale-110"
+        >
+      </div>
+
+      <!-- CONTENT -->
+      <div class="p-4 flex flex-col gap-3">
+
+        <p class="flex items-center gap-4 text-sm text-gray-600">
+          <span class="flex items-center gap-1">
+            <ion-icon name="person-circle-outline" class="text-[#80b500]"></ion-icon>
+            Admin
+          </span>
+
+          <span class="flex items-center gap-1">
+            <ion-icon name="pricetag-outline" class="text-[#80b500]"></ion-icon>
+            Services
+          </span>
+        </p>
+
+        <h2 class="text-lg md:text-xl lg:text-2xl font-semibold">
+          Elegance, Service & Repairs
+        </h2>
+
+        <!-- FOOTER -->
+        <div class="flex items-center justify-between text-sm mt-6">
+          <span class="flex items-center gap-1 text-gray-500">
+            <ion-icon name="calendar-outline" class="text-[#80b500] font-bold"></ion-icon>
+            March 20, 2026
+          </span>
+
+          <a href="#" class="uppercase text-[#80b500] font-semibold hover:underline">
+            Read more
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+  </li>
+  
+</ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="">
+        <section class="relative pt-20 bg-[#f7f5eb]">
+            <div class="container m-auto px-s">
+            <div class="lg:absolute lg:left-1/2 top-0 lg:-translate-x-1/2 lg:-translate-y-1/2 w-full max-w-7xl px-4 shadow-3xl bg-[#f9fafb]"> 
+
+            <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-10 py-12 px-6 rounded-lg">
+            
+            <article class="flex gap-2">
+                <div class="flex items-center justify-center">
+                <img src="images/curatedIcon1.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                <h3 class="font-bold text-lg">Curated Products</h3>
+                <p class="text-sm">We provide curated products for all product over $100</p>
+                </div>
+            </article>
+
+            <article class="flex gap-2">
+                <div class="flex items-center justify-center">
+                <img src="images/curatedIcon2.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                <h3 class="font-bold text-lg">Homemade</h3>
+                <p class="text-sm">We ensure the product quality that is our main goal</p>
+                </div>
+            </article>
+
+            <article class="flex gap-2">
+                <div class="flex items-center justify-center">
+                <img src="images/curatedIcon3.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                <h3 class="font-bold text-lg">Natural Food Products</h3>
+                <p class="text-sm">We provide curated products for all product over $100</p>
+                </div>
+            </article>
+
+            <article class="flex gap-2">
+                <div class="flex items-center justify-center">
+                <img src="images/curatedIcon4.png" alt="">
+                </div>
+                <div class="flex flex-col gap-2">
+                <h3 class="font-bold text-lg line-clamp-1">Natural Free Home Delivery</h3>
+                <p class="text-sm">We provide curated products for all product over $100</p>
+                </div>
+            </article>
+            </div>
+            </div>
+            <div
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-6 py-4 mt-8"
+          >
+            <aside class="text-[#1a1a1a] flex flex-col gap-2">
+              <h1 class="">
+                <a href="index.html" class="flex items-center gap-[1px]">
+                 <img src="images/indexLogo.png" alt="logo" class="inline-block" />
+                </a>
+              </h1>
+              <p class="text-sm ">
+                Your favourite place for delicious bites, and refreshing drinks.
+                Order today band enjoy fast, fresh delivery!
+              </p>
+              <ul class="flex items-center gap-2">
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://facebook.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-blue-600"
+                  >
+                    <ion-icon name="logo-facebook" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://x.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-blue-600"
+                  >
+                    <ion-icon name="logo-twitter" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://instagram.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-red-500"
+                  >
+                    <ion-icon name="logo-instagram" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+                <li
+                  class="w-7 h-7 flex items-center justify-center hover:-translate-y-1 transition-transform duration-200"
+                >
+                  <a
+                    href="https://tiktok.com"
+                    class="flex items-center justify-center text-gray-600 hover:text-red-600"
+                  >
+                    <ion-icon name="logo-tiktok" class="text-2xl"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </aside>
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-[#1a1a1a] font-bold text-xl">
+                Navigation
+              </h2>
+              <ul
+                class="flex flex-col gap-3 text-sm text-[#1a1a1a] list-disc list-inside"
+              >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-[#1a1a1a] font-bold text-xl">
+                Categories
+              </h2>
+              <ul class="flex flex-col gap-3 text-sm">
+                <li><a href="#snacks">Snacks</a></li>
+                <li><a href="#foods">Foods</a></li>
+                <li><a href="#wines">Wine</a></li>
+              </ul>
+            </nav>
+
+            <nav class="flex flex-col justify-start gap-3">
+              <h2 class="text-left text-[#1a1a1a] font-bold text-xl">
+                Customer Service
+              </h2>
+              <ul class="flex flex-col gap-3 text-sm">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Contact Support</a></li>
+              </ul>
+            </nav>
+
+            <aside class="flex flex-col justify-start gap-3 text-[#1a1a1a]">
+              <h2 class="text-left font-bold text-xl">
+                Newsletter
+              </h2>
+
+              <div class="flex flex-col gap-3 text-sm">
+                <p class="">
+                  Subscribe to our newsletter for the lastest deals and offers
+                </p>
+                <form
+                  action=""
+                  class="flex border-1 border-[#1a1a1a] rounded-sm overflow-hidden"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Subscribe for newsletter..."
+                    class="w-full border-0 outline-0 px-2 placeholder:text-xs placeholder:text-[#1a1a1a]"
+                  />
+                  <button
+                    type="submit"
+                    class="bg-[#1a1a1a] text-[#f4f4f4] block shrink-0 py-2 px-2 border-0"
+                  >
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </aside>
+            </div>
+          <div
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-6 py-4 border-t border-b border-white/40"
+          >
+            <div class="flex flex-col gap-4 text-[#1a1a1a]">
+              <h2 class=" font-bold text-xl">Contact Us</h2>
+              <ul class="flex flex-col gap-2 text-[#1a1a1a]">
+                <li>
+                  <a href="+2348164613530" class="flex items-center gap-2">
+                    <ion-icon name="call-outline" class="text-xl"></ion-icon>
+                    <span class="">+2348164613530</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="mailto:support@foodie.com"
+                    class="flex items-center gap-2"
+                  >
+                    <ion-icon name="mail-outline" class="text-xl"></ion-icon>
+                    <span>support@foodie.com</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center gap-2">
+                    <ion-icon
+                      name="location-outline"
+                      class="text-xl"
+                    ></ion-icon>
+                    <span class="">123 Foodie Street, Mississippi, USA</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col gap-4 text-[#1a1a1a]">
+              <h2 class="text-xl text-right font-bold">
+                We Accept
+              </h2>
+              <div class="flex items-center gap-2 showdow-lg h-15 justify-end">
+                <img
+                  src="images/payment-icon.png"
+                  alt="visa card"
+                  class="h-full block flex"
+                />
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="text-center text-xs text-[#1a1a1a] py-2">
+          &copy;Foodie. All rights reserved. | Privacy Policy | Terms of Service
+        </p>
+        </div>
+        </section>
+    </footer>
+
+    <!-- prettier-ignore -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <!-- prettier-ignore -->
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
