@@ -60,7 +60,7 @@
     
           <a href="" class="hidden lg:block bg-[#1a1a1a] text-[#f4f4f4] rounded-full text-xs py-2 px-4 shrink-0">Sign Up</a>
 
-          <button
+          <button id="openMenu"
             class="flex items-center justify-center cursor-pointer lg:hidden shrink-0"
           >
             <ion-icon name="menu-outline" class="text-3xl"></ion-icon>
@@ -71,6 +71,95 @@
     </header>
 
     <main class="">
+      <!-- MOBILE MENU -->
+    <section id="mobileMenu" class="fixed inset-0 bg-[#1a1a1a]/50 z-100 h-screen opacity-0 pointer-events-none transition-opacity duration-300">
+    <aside id="menuPanel" class="w-full md:w-1/2 bg-white h-screen flex flex-col transform -translate-x-full transition-transform duration-300">
+      <header class="py-4 px-2 flex gap-2 justify-between items-center w-full">
+        <a href="" class="flex items-center">
+          <img src="images/indexLogo.png" alt="logo">
+        </a>
+
+        <button id="closeMenu" class="text-4xl cursor-pointer flex items-center justify-center text-center">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </header>
+      <main class=" py-4 px-2 w-full flex flex-col overflow-hidden grow gap-5">
+        <form action="" class="w-full flex border border-[#f4f4f4] focus-within:border-[#80b500] text-[#1a1a1a]">
+          <input type="search" name="" id="" placeholder="Search..." class="w-full outline-none border-0 py-2 px-2 bg-transparent">
+          <button type="submit" class="flex items-center justify-center shrink-0 border-0 py-2 px-2 cursor-pointer">
+            <ion-icon name="search-outline" class=""></ion-icon>
+          </button>
+        </form>
+      <div class="my-1 flex flex-col overflow-y-scroll grow scrollbar-hide">
+        <ul class="flex flex-col gap-4 pb-6 border-b border-[#ccc]">
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="flex flex-col gap-4 py-6 border-b border-[#ccc] text-sm">
+          <li>
+            <a href="account.html" class="flex items-center gap-2">
+            <span class="flex items-center border border-[#ccc] p-2">
+            <ion-icon name="person-circle-outline" class="text-[25px]"></ion-icon>
+          </span>
+          <span class="text-sm">
+            My Account
+          </span>
+          </a>
+          </li>
+          <li>
+            <a href="wishlist.html" class="flex items-center gap-2">
+              <span class="relative flex items-center justify-center border border-[#ccc] p-2">
+                <ion-icon name="heart-outline" class="text-[25px]"></ion-icon>
+                <small class="absolute bg-[#1a1a1a] text-[#f4f4f4] text-xs py-[1px] px-[6px] rounded-full -top-1 -right-1 flex items-center justify-center">0</small>
+              </span>
+              <span class="text-sm">
+                Wishlist
+              </span>
+              
+            </a>
+            </li>
+            <li>
+              <a href="cart.html" class="flex items-center gap-2">
+                <span class="relative flex items-center justify-center border border-[#ccc] p-2">
+                  <img src="images/cart.png" alt="cart icon" class="w-[25px]">
+                  <small class="absolute bg-[#1a1a1a] text-[#f4f4f4] text-xs py-[1px] px-[6px] rounded-full -top-1 -right-1 flex items-center justify-center z-20">0</small>
+              </span>
+              <span class="text-sm">Shopping Cart</span>
+            </a>
+          </li>
+          
+          
+        </ul>
+        </div>
+      </main>
+      <footer class="py-4 px-2 w-full">
+        <ul class="flex gap-4">
+          <li>
+            <a href="https://facebook.com" class="bg-[#f7f5eb] h-10 w-10 flex items-center justify-center">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+          <li>
+            <a href="https://x.com" class="bg-[#f7f5eb] h-10 w-10 flex items-center justify-center">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+          <li>
+            <a href="https://linkedin.com" class="bg-[#f7f5eb] h-10 w-10 flex items-center justify-center">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+          <li>
+            <a href="https://instagram.com" class="bg-[#f7f5eb] h-10 w-10 flex items-center justify-center">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+        </ul>
+      </footer>
+    </aside>
+    </section>
+
         <!-- HERO SECTION -->
       <section class="min-h-fit pt-36 pb-35 bg-[#f7f5eb]">
         <div class="max-w-full lg:max-w-[90%] m-auto px-2 flex lg:flex-row flex-col">
@@ -81,7 +170,7 @@
                 alt="icon of a green pepper"
                 class=""
               />
-              <small class="">100% Genuine Products</small>
+              <small class="font-semibold">100% Genuine Products</small>
             </p>
             <h1
               class="text-3xl md:text-5xl lg:text-7xl font-bold text-[#333] mt-3 mb-7 flex flex-col"
@@ -1265,7 +1354,7 @@
     <footer class="">
         <section class="relative pt-20 bg-[#f7f5eb]">
             <div class="max-w-full lg:max-w-[90%] m-auto px-2">
-            <div class="lg:absolute lg:left-1/2 top-0 lg:-translate-x-1/2 lg:-translate-y-1/2 w-full max-w-7xl px-4 shadow-3xl bg-[#f9fafb]"> 
+            <div class="lg:absolute lg:left-1/2 top-0 lg:-translate-x-1/2 lg:-translate-y-1/2 w-full lg:max-w-[90%] px-0 shadow-3xl bg-[#f9fafb]"> 
 
             <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,_1fr))] gap-10 py-12 px-6 rounded-lg">
             
@@ -1311,7 +1400,7 @@
             </div>
             </div>
             <div
-            class="w-full grid grid-cols-[repeat(auto-fit,minmax(240px,_1fr))] gap-6 py-4 mt-8"
+            class="w-full grid grid-cols-[repeat(auto-fit,minmax(200px,_1fr))] gap-6 py-4 mt-8"
           >
             <aside class="text-[#1a1a1a] flex flex-col gap-2">
               <h1 class="">
@@ -1492,5 +1581,6 @@
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <!-- prettier-ignore -->
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+      <script src="script.js"></script>
   </body>
 </html>
