@@ -45,7 +45,7 @@
           >
             <ion-icon name="search-outline" class="text-2xl"></ion-icon>
           </button>
-          <button
+          <button id="openCart"
             class="relative flex items-center justify-center cursor-pointer"
           >
             <img src="images/cart.png" alt="" width="40" class="">
@@ -68,6 +68,122 @@
       </nav>
     </header>
     <main class="">
+ <!-- CART MENU -->
+    <section id="cart" class="fixed inset-0 z-50 h-screen hidden">
+      <div id="cartOverlay" class="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+
+      <aside id="cartPanel" 
+        class="absolute right-0 top-0 h-full w-full md:w-1/2 bg-[#f7f5eb] shadow-lg flex flex-col transform transition-transform duration-300">
+     
+        <header class="py-4 px-3 flex justify-between items-center border-b border-[#ccc]">
+          <h2 class="text-2xl font-bold">Cart</h2>
+          <button id="closeCart" class="text-3xl">
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+        </header>
+
+        <main class="overflow-y-auto flex-1 px-3 scrollbar-hide">
+          <ul class="flex flex-col gap-3">
+
+          <li class="flex gap-4 border-b border-[#ccc] py-4">
+              <div class="relative w-24 h-24 bg-yellow-500">
+                <button class="deleteBtn text-lg cursor-pointer flex items-center justify-center text-center shadow-md hover:bg-red-500 hover:text-white h-5 w-5 rounded-full bg-white absolute top-0 left-1">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+                <img src="images/peach.png" alt="photo of a peach fruit" class="productPhoto block object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="productName font-bold">Pawpaw</h3>
+                <p class="flex gap-1 items-center">
+                  <span class="productQuantity">1</span>
+                  <span class="productQuantity">x</span>
+                  <span class="productPrice">$50.00</span>
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-4 border-b border-[#ccc] py-4">
+              <div class="relative w-24 h-24 bg-yellow-500">
+                <button class="deleteBtn text-lg cursor-pointer flex items-center justify-center text-center shadow-md hover:bg-red-500 hover:text-white h-5 w-5 rounded-full bg-white absolute top-0">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+                <img src="images/pawpaw.png" alt="photo of a pawpaw fruit" class="productPhoto block object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="productName font-bold">Pawpaw</h3>
+                <p class="flex gap-1 items-center">
+                  <span class="productQuantity">1</span>
+                  <span class="productQuantity">x</span>
+                  <span class="productPrice">$50.00</span>
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-4 border-b border-[#ccc] py-4">
+              <div class="relative w-24 h-24 bg-yellow-500">
+                <button class="deleteBtn text-lg cursor-pointer flex items-center justify-center text-center shadow-md hover:bg-red-500 hover:text-white h-5 w-5 rounded-full bg-white absolute top-0">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+                <img src="images/broccoli.png" alt="photo of a broccoli" class="productPhoto block object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="productName font-bold">Broccolli</h3>
+                <p class="flex gap-1 items-center">
+                  <span class="productQuantity">1</span>
+                  <span class="productQuantity">x</span>
+                  <span class="productPrice">$40.00</span>
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-4 border-b border-[#ccc] py-4">
+              <div class="relative w-24 h-24 bg-yellow-500">
+                <button class="deleteBtn text-lg cursor-pointer flex items-center justify-center text-center shadow-md hover:bg-red-500 hover:text-white h-5 w-5 rounded-full bg-white absolute top-0">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+                <img src="images/apple.png" alt="photo of an apple fruit" class="productPhoto block object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="productName font-bold">Apples</h3>
+                <p class="flex gap-1 items-center">
+                  <span class="productQuantity">1</span>
+                  <span class="productQuantity">x</span>
+                  <span class="productPrice">$20.00</span>
+                </p>
+              </div>
+            </li>
+            <li class="flex gap-4 border-b last:border-none border-[#ccc] py-4">
+              <div class="relative w-24 h-24 bg-yellow-500">
+                <button class="deleteBtn text-lg cursor-pointer flex items-center justify-center text-center shadow-md hover:bg-red-500 hover:text-white h-5 w-5 rounded-full bg-white absolute top-0">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+                <img src="images/strawberry.png" alt="photo of a strawberry fruit" class="productPhoto block object-cover w-full h-full">
+              </div>
+              <div class="flex flex-col gap-2">
+                <h3 class="productName font-bold">Straw Berry</h3>
+                <p class="flex gap-1 items-center">
+                  <span class="productQuantity">1</span>
+                  <span class="productQuantity">x</span>
+                  <span class="productPrice">$30.00</span>
+                </p>
+              </div>
+            </li>
+          </ul>
+        </main>
+        <footer class="px-3">
+          <div class="flex items-center justify-between border-t border-b border-[#ccc] py-8">
+            <h3 class="font-bold">
+              Subtotal:
+            </h3>
+            <h4 class="font-bold">
+              $310.00
+            </h4>
+          </div>
+
+          <div class="uppercase pt-6 pb-10 flex items-center justify-between">
+            <a href="#" class="bg-[#80b500] text-white py-3 px-4 text-xs">view cart</a>
+            <a href="#" class="bg-[#1a1a1a] text-[#f4f4f4] py-3 px-4 text-xs">checkout</a>
+          </div>
+        </footer>
+      </aside>
+    </section>
        <!-- MOBILE MENU -->
     <section id="mobileMenu" class="fixed inset-0 bg-[#1a1a1a]/50 z-100 h-screen opacity-0 pointer-events-none transition-opacity duration-300">
     <aside id="menuPanel" class="w-3/4 bg-white h-screen flex flex-col transform -translate-x-full transition-transform duration-300">
